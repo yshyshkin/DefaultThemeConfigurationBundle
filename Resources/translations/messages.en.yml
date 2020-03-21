@@ -1,0 +1,13 @@
+ystools:
+    system_configuration:
+        group:
+            default_theme_configuration.label: 'Default Theme Configuration'
+            logo_configuration.label: 'Logo Configuration'
+
+        field:
+            company_name:
+                label: 'Company Name'
+                tooltip: 'The company name rendered as a hint for the logo'
+            company_logo:
+                label: 'Company Logo'
+                tooltip: 'The company logo rendered at the header'

@@ -1,0 +1,8 @@
+services:
+    ystools_dtc.twig_extenstion.default_theme_configuration:
+        class: 'YsTools\Bundle\DefaultThemeConfigurationBundle\Twig\DefaultThemeConfigurationExtension'
+        public: false
+        arguments:
+            - '@oro_platform.twig.service_locator'
+        tags:
+            - { name: twig.extension }

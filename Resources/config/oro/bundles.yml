@@ -1,0 +1,2 @@
+bundles:
+    - { name: YsTools\Bundle\DefaultThemeConfigurationBundle\YsToolsDefaultThemeConfigurationBundle, priority: 1000 }

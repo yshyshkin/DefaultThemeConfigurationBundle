@@ -1,0 +1,42 @@
+system_configuration:
+    groups:
+        dtc_default_theme_configuration:
+            title: 'ystools.system_configuration.group.default_theme_configuration.label'
+            icon:  fa-cog
+        dtc_logo_configuration:
+            title: 'ystools.system_configuration.group.logo_configuration.label'
+
+    fields:
+        ystools_dtc.company_logo:
+            data_type: string
+            type: 'Oro\Bundle\ConfigBundle\Form\Type\ConfigFileType'
+            priority: 10
+            options:
+                label:      'ystools.system_configuration.field.company_logo.label'
+                tooltip:    'ystools.system_configuration.field.company_logo.tooltip'
+                required:   false
+                fileConstraints:
+                    - Oro\Bundle\AttachmentBundle\Validator\Constraints\Image: ~
+        ystools_dtc.company_name:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextType
+            search_type: text
+            priority: 5
+            options:
+                label:      'ystools.system_configuration.field.company_name.label'
+                tooltip:    'ystools.system_configuration.field.company_name.tooltip'
+                required:   false
+
+    tree:
+        system_configuration:
+            commerce:
+                children:
+                    design:
+                        children:
+                            dtc_default_theme_configuration:
+                                priority: -100
+                                children:
+                                    dtc_logo_configuration:
+                                        children:
+                                            - ystools_dtc.company_logo
+                                            - ystools_dtc.company_name

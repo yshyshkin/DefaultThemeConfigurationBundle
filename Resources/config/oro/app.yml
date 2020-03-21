@@ -1,0 +1,7 @@
+liip_imagine:
+    filter_sets:
+        dtc_company_logo:
+            quality:          95
+            filters:
+                relative_resize: { heighten: 50 }
+                strip:        ~
