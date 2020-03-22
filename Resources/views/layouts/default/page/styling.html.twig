@@ -1,0 +1,145 @@
+{% block _dtc_styles_global_header_footer_widget %}
+    <style type="text/css">
+        {% set headerFooterBgColor = oro_config_value('ystools_dtc.header_footer_bg_color') %}
+        {% if headerFooterBgColor %}
+            .topbar,
+            .page-footer
+            {
+                background-color: {{ headerFooterBgColor }} !important;
+            }
+
+            .copyright
+            {
+                border-color: {{ headerFooterBgColor }} !important;
+
+            }
+        {% endif %}
+
+        {% set headerFooterTextColor = oro_config_value('ystools_dtc.header_footer_text_color') %}
+        {% if headerFooterTextColor %}
+            .topbar,
+            .topbar a,
+            .topbar .decorated,
+            .page-footer,
+            .page-footer h3,
+            .page-footer h6,
+            .page-footer a,
+            .page-footer span,
+            .copyright
+            {
+                color: {{ headerFooterTextColor }} !important;
+            }
+        {% endif %}
+    </style>
+{% endblock %}
+
+{% block _dtc_styles_global_menu_widget %}
+    <style type="text/css">
+        {% set mainMenuBgColor = oro_config_value('ystools_dtc.main_menu_bg_color') %}
+        {% if mainMenuBgColor %}
+            .main-menu-outer,
+            .main-menu__sublist-container,
+            .page-sidebar .shopping-list
+            {
+                background-color: {{ mainMenuBgColor }} !important;
+            }
+
+            .header-row
+            {
+                border-color: {{ mainMenuBgColor }} !important;
+            }
+        {% endif %}
+
+        {% set mainMenuTextColor = oro_config_value('ystools_dtc.main_menu_text_color') %}
+        {% if mainMenuTextColor %}
+            .main-menu-outer a,
+            .main-menu-outer p,
+            .page-sidebar .shopping-list a
+            {
+                color: {{ mainMenuTextColor }} !important;
+            }
+        {% endif %}
+
+        {% set secondaryMenuBgColor = oro_config_value('ystools_dtc.secondary_menu_bg_color') %}
+        {% if secondaryMenuBgColor %}
+            .main-menu__sublist-container,
+            .header-row__wrapper,
+            .shopping-list-dropdown__item,
+            .header-row__dropdown-footer button,
+            .page-sidebar .shopping-list__item
+            {
+                border-color: {{ secondaryMenuBgColor }} !important;
+            }
+
+            .main-menu-column:before
+            {
+                border-left-color: {{ secondaryMenuBgColor }} !important;
+            }
+
+            .main-menu__item:hover,
+            .shopping-list-widget .main-menu__item,
+            .header-row__dropdown-footer button,
+            .primary-menu-container,
+            .page-sidebar .shopping-list__item--current,
+            .page-sidebar .shopping-list__item:hover
+            {
+                background-color: {{ secondaryMenuBgColor }} !important;
+            }
+        {% endif %}
+
+        {% set secondaryMenuTextColor = oro_config_value('ystools_dtc.secondary_menu_text_color') %}
+        {% if secondaryMenuTextColor %}
+            .shopping-list-widget .main-menu__item,
+            .header-row__dropdown-footer button,
+            .shopping-list-widget__create-btn :before,
+            .primary-menu-container h2,
+            .primary-menu-container a,
+            .page-sidebar .shopping-list__item--current a,
+            .page-sidebar .shopping-list__item:hover a
+            {
+                color: {{ secondaryMenuTextColor }} !important;
+            }
+        {% endif %}
+    </style>
+{% endblock %}
+
+{% block _dtc_styles_global_table_widget %}
+    <style type="text/css">
+        {% set tableHeaderBgColor = oro_config_value('ystools_dtc.table_header_bg_color') %}
+        {% if tableHeaderBgColor %}
+            .table thead th,
+            .shopping-list-line-items__header,
+            .product-prices__table .product-prices__th,
+            .checkout-order-summary__grid .checkout-order-summary__grid-th
+            {
+                background-color: {{ tableHeaderBgColor }} !important;
+            }
+
+            .table,
+            .table thead th,
+            .shopping-list-line-items__header
+            {
+                border-color: {{ tableHeaderBgColor }} !important;
+            }
+
+            .product-prices
+            {
+                background: none;
+            }
+        {% endif %}
+
+        {% set tableHeaderTextColor = oro_config_value('ystools_dtc.table_header_text_color') %}
+        {% if tableHeaderTextColor %}
+            .table thead th,
+            .table thead th .grid-header-cell__link,
+            .shopping-list-line-items__header-label,
+            .product-prices__table .product-prices__th,
+            .checkout-order-summary__grid .checkout-order-summary__grid-th
+            {
+                color: {{ tableHeaderTextColor }} !important;
+            }
+        {% endif %}
+    </style>
+{% endblock %}
+
+

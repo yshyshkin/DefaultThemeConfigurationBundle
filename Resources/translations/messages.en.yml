@@ -3,6 +3,9 @@ ystools:
         group:
             default_theme_configuration.label: 'Default Theme Configuration'
             logo_configuration.label: 'Logo Configuration'
+            ui_color_configuration.label: 'User Interface Colors'
+            ui_styling_configuration.label: 'User Interface Styling'
+            custom_css_styling_configuration.label: 'Custom CSS Styling'
 
         field:
             company_name:
@@ -11,3 +14,27 @@ ystools:
             company_logo:
                 label: 'Company Logo'
                 tooltip: 'The company logo rendered at the header'
+            header_footer_bg_color:
+                label: 'Header and Footer Background Color'
+                tooltip: 'The color of the background of header and footer blocks'
+            header_footer_text_color:
+                label: 'Header and Footer Text Color'
+                tooltip: 'The color of the text of header and footer blocks'
+            main_menu_bg_color:
+                label: 'Main Menu Background Color'
+                tooltip: 'The color of the background of the main menu block'
+            main_menu_text_color:
+                label: 'Main Menu Text Color'
+                tooltip: 'The color of the text of the main menu block'
+            secondary_menu_bg_color:
+                label: 'Secondary Menu Background Color'
+                tooltip: 'The color of the background of secondary menu blocks (account, shopping list etc)'
+            secondary_menu_text_color:
+                label: 'Secondary Menu Text Color'
+                tooltip: 'The color of the text of secondary menu blocks (account, shopping list etc)'
+            table_header_bg_color:
+                label: 'Table Header Background Color'
+                tooltip: 'The color of the background of table headers'
+            table_header_text_color:
+                label: 'Table Header Text Color'
+                tooltip: 'The color of the text of table headers'

@@ -5,6 +5,8 @@ system_configuration:
             icon:  fa-cog
         dtc_logo_configuration:
             title: 'ystools.system_configuration.group.logo_configuration.label'
+        dtc_ui_color_configuration:
+            title: 'ystools.system_configuration.group.ui_color_configuration.label'
 
     fields:
         ystools_dtc.company_logo:
@@ -17,6 +19,7 @@ system_configuration:
                 required:   false
                 fileConstraints:
                     - Oro\Bundle\AttachmentBundle\Validator\Constraints\Image: ~
+
         ystools_dtc.company_name:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextType
@@ -25,6 +28,86 @@ system_configuration:
             options:
                 label:      'ystools.system_configuration.field.company_name.label'
                 tooltip:    'ystools.system_configuration.field.company_name.tooltip'
+                required:   false
+
+        ystools_dtc.header_footer_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 95
+            options:
+                label:      'ystools.system_configuration.field.header_footer_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.header_footer_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.header_footer_text_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 90
+            options:
+                label:      'ystools.system_configuration.field.header_footer_text_color.label'
+                tooltip:    'ystools.system_configuration.field.header_footer_text_color.tooltip'
+                required:   false
+
+        ystools_dtc.main_menu_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 85
+            options:
+                label:      'ystools.system_configuration.field.main_menu_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.main_menu_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.main_menu_text_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 80
+            options:
+                label:      'ystools.system_configuration.field.main_menu_text_color.label'
+                tooltip:    'ystools.system_configuration.field.main_menu_text_color.tooltip'
+                required:   false
+
+        ystools_dtc.secondary_menu_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 75
+            options:
+                label:      'ystools.system_configuration.field.secondary_menu_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.secondary_menu_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.secondary_menu_text_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 70
+            options:
+                label:      'ystools.system_configuration.field.secondary_menu_text_color.label'
+                tooltip:    'ystools.system_configuration.field.secondary_menu_text_color.tooltip'
+                required:   false
+
+        ystools_dtc.table_header_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 65
+            options:
+                label:      'ystools.system_configuration.field.table_header_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.table_header_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.table_header_text_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 60
+            options:
+                label:      'ystools.system_configuration.field.table_header_text_color.label'
+                tooltip:    'ystools.system_configuration.field.table_header_text_color.tooltip'
                 required:   false
 
     tree:
@@ -40,3 +123,13 @@ system_configuration:
                                         children:
                                             - ystools_dtc.company_logo
                                             - ystools_dtc.company_name
+                                    dtc_ui_color_configuration:
+                                        children:
+                                            - ystools_dtc.header_footer_bg_color
+                                            - ystools_dtc.header_footer_text_color
+                                            - ystools_dtc.main_menu_bg_color
+                                            - ystools_dtc.main_menu_text_color
+                                            - ystools_dtc.secondary_menu_bg_color
+                                            - ystools_dtc.secondary_menu_text_color
+                                            - ystools_dtc.table_header_bg_color
+                                            - ystools_dtc.table_header_text_color

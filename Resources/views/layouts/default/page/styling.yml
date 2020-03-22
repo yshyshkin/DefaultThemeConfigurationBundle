@@ -1,0 +1,21 @@
+layout:
+    actions:
+        - '@setBlockTheme':
+              themes: 'styling.html.twig'
+        - '@add':
+              id: dtc_styles_global
+              parentId: head
+              siblingId: styles
+              blockType: container
+        - '@add':
+              id: dtc_styles_global_header_footer
+              parentId: dtc_styles_global
+              blockType: block
+        - '@add':
+              id: dtc_styles_global_menu
+              parentId: dtc_styles_global
+              blockType: block
+        - '@add':
+              id: dtc_styles_global_table
+              parentId: dtc_styles_global
+              blockType: block
