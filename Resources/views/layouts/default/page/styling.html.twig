@@ -1,4 +1,4 @@
-{% block _dtc_styles_global_header_footer_widget %}
+{% block _dtc_styles_global_main_element_widget %}
     <style type="text/css">
         {% set headerFooterBgColor = oro_config_value('ystools_dtc.header_footer_bg_color') %}
         {% if headerFooterBgColor %}
@@ -28,6 +28,80 @@
             .copyright
             {
                 color: {{ headerFooterTextColor }} !important;
+            }
+        {% endif %}
+
+        {% set tableHeaderBgColor = oro_config_value('ystools_dtc.table_header_bg_color') %}
+        {% if tableHeaderBgColor %}
+            .table thead th,
+            .shopping-list-line-items__header,
+            .product-prices__table .product-prices__th,
+            .checkout-order-summary__grid .checkout-order-summary__grid-th
+            {
+                background-color: {{ tableHeaderBgColor }} !important;
+            }
+
+            .table,
+            .table thead th,
+            .shopping-list-line-items__header
+            {
+                border-color: {{ tableHeaderBgColor }} !important;
+            }
+
+            .product-prices
+            {
+                background: none;
+            }
+        {% endif %}
+
+        {% set tableHeaderTextColor = oro_config_value('ystools_dtc.table_header_text_color') %}
+        {% if tableHeaderTextColor %}
+            .table thead th,
+            .table thead th .grid-header-cell__link,
+            .shopping-list-line-items__header-label,
+            .product-prices__table .product-prices__th,
+            .checkout-order-summary__grid .checkout-order-summary__grid-th
+            {
+                color: {{ tableHeaderTextColor }} !important;
+            }
+        {% endif %}
+    </style>
+{% endblock %}
+
+{% block _dtc_styles_global_secondary_element_widget %}
+    <style type="text/css">
+        {% set iconBgColor = oro_config_value('ystools_dtc.icon_bg_color') %}
+        {% if iconBgColor %}
+            .cart-widget__icon,
+            .shopping-list__item-indicator,
+            .quick-access__icon,
+            .badge,
+            .checkout__title-icon,
+            .checkout-navigation__icon--current,
+            .checkout-navigation__icon--complete
+            {
+                background-color: {{ iconBgColor }} !important;
+            }
+
+            .catalog-switcher .btn.active,
+            .catalog-switcher .btn:not(.disabled):active,
+            .product-item__sku-value
+            {
+                color: {{ iconBgColor }} !important;
+            }
+        {% endif %}
+
+        {% set iconContentColor = oro_config_value('ystools_dtc.icon_content_color') %}
+        {% if iconContentColor %}
+            .cart-widget__icon,
+            .shopping-list__item-indicator,
+            .quick-access__icon,
+            .badge,
+            .checkout__title-icon,
+            .checkout-navigation__icon--current,
+            .checkout-navigation__icon--complete
+            {
+                color: {{ iconContentColor }} !important;
             }
         {% endif %}
     </style>
@@ -103,43 +177,66 @@
     </style>
 {% endblock %}
 
-{% block _dtc_styles_global_table_widget %}
+{% block _dtc_styles_global_button_widget %}
     <style type="text/css">
-        {% set tableHeaderBgColor = oro_config_value('ystools_dtc.table_header_bg_color') %}
-        {% if tableHeaderBgColor %}
-            .table thead th,
-            .shopping-list-line-items__header,
-            .product-prices__table .product-prices__th,
-            .checkout-order-summary__grid .checkout-order-summary__grid-th
+        {% set mainButtonBgColor = oro_config_value('ystools_dtc.main_button_bg_color') %}
+        {% if mainButtonBgColor %}
+            .btn.btn--info,
+            .promo-slider__info a[href]
             {
-                background-color: {{ tableHeaderBgColor }} !important;
+                background-color: {{ mainButtonBgColor }} !important;
             }
 
-            .table,
-            .table thead th,
-            .shopping-list-line-items__header
+            .btn.btn--info,
+            .promo-slider__info a[href]
             {
-                border-color: {{ tableHeaderBgColor }} !important;
+                border-color: {{ mainButtonBgColor }} !important;
             }
 
-            .product-prices
-            {
-                background: none;
+            .checkout-form__req-text {
+                color: {{ mainButtonBgColor }} !important;
             }
         {% endif %}
 
-        {% set tableHeaderTextColor = oro_config_value('ystools_dtc.table_header_text_color') %}
-        {% if tableHeaderTextColor %}
-            .table thead th,
-            .table thead th .grid-header-cell__link,
-            .shopping-list-line-items__header-label,
-            .product-prices__table .product-prices__th,
-            .checkout-order-summary__grid .checkout-order-summary__grid-th
+        {% set mainButtonTextColor = oro_config_value('ystools_dtc.main_button_text_color') %}
+        {% if mainButtonTextColor %}
+            .btn.btn--info,
+            .promo-slider__info a[href]
             {
-                color: {{ tableHeaderTextColor }} !important;
+                color: {{ mainButtonTextColor }} !important;
+            }
+
+            .btn.btn--info:hover
+            {
+                border-right-color: {{ mainButtonTextColor }} !important;
+            }
+
+            .btn-group .btn.btn--info.dropdown-toggle
+            {
+                border-left-color: {{ mainButtonTextColor }} !important;
+            }
+        {% endif %}
+
+        {% set secondaryButtonBgColor = oro_config_value('ystools_dtc.secondary_button_bg_color') %}
+        {% if secondaryButtonBgColor %}
+            .btn:not(.btn--info):not(.btn--link):not(.btn--default):not(.btn--plain)
+            {
+                background-color: {{ secondaryButtonBgColor }} !important;
+            }
+
+            .btn:not(.btn--info):not(.btn--link):not(.btn--default):not(.btn--plain)
+            {
+                border-color: {{ secondaryButtonBgColor }} !important;
+            }
+        {% endif %}
+
+        {% set secondaryButtonTextColor = oro_config_value('ystools_dtc.secondary_button_text_color') %}
+        {% if secondaryButtonTextColor %}
+            .btn:not(.btn--info):not(.btn--link):not(.btn--default):not(.btn--plain)
+            {
+                color: {{ secondaryButtonTextColor }} !important;
             }
         {% endif %}
     </style>
 {% endblock %}
-
 

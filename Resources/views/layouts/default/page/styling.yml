@@ -8,7 +8,11 @@ layout:
               siblingId: styles
               blockType: container
         - '@add':
-              id: dtc_styles_global_header_footer
+              id: dtc_styles_global_main_element
+              parentId: dtc_styles_global
+              blockType: block
+        - '@add':
+              id: dtc_styles_global_secondary_element
               parentId: dtc_styles_global
               blockType: block
         - '@add':
@@ -16,6 +20,6 @@ layout:
               parentId: dtc_styles_global
               blockType: block
         - '@add':
-              id: dtc_styles_global_table
+              id: dtc_styles_global_button
               parentId: dtc_styles_global
               blockType: block

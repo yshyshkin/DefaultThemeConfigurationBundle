@@ -5,8 +5,14 @@ system_configuration:
             icon:  fa-cog
         dtc_logo_configuration:
             title: 'ystools.system_configuration.group.logo_configuration.label'
-        dtc_ui_color_configuration:
-            title: 'ystools.system_configuration.group.ui_color_configuration.label'
+        dtc_ui_main_element_color_configuration:
+            title: 'ystools.system_configuration.group.ui_main_element_color_configuration.label'
+        dtc_ui_secondary_element_color_configuration:
+            title: 'ystools.system_configuration.group.ui_secondary_element_color_configuration.label'
+        dtc_ui_menu_color_configuration:
+            title: 'ystools.system_configuration.group.ui_menu_color_configuration.label'
+        dtc_ui_button_color_configuration:
+            title: 'ystools.system_configuration.group.ui_button_color_configuration.label'
 
     fields:
         ystools_dtc.company_logo:
@@ -110,6 +116,66 @@ system_configuration:
                 tooltip:    'ystools.system_configuration.field.table_header_text_color.tooltip'
                 required:   false
 
+        ystools_dtc.main_button_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 55
+            options:
+                label:      'ystools.system_configuration.field.main_button_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.main_button_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.main_button_text_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 50
+            options:
+                label:      'ystools.system_configuration.field.main_button_text_color.label'
+                tooltip:    'ystools.system_configuration.field.main_button_text_color.tooltip'
+                required:   false
+
+        ystools_dtc.secondary_button_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 45
+            options:
+                label:      'ystools.system_configuration.field.secondary_button_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.secondary_button_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.secondary_button_text_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 40
+            options:
+                label:      'ystools.system_configuration.field.secondary_button_text_color.label'
+                tooltip:    'ystools.system_configuration.field.secondary_button_text_color.tooltip'
+                required:   false
+
+        ystools_dtc.icon_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 35
+            options:
+                label:      'ystools.system_configuration.field.icon_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.icon_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.icon_content_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 30
+            options:
+                label:      'ystools.system_configuration.field.icon_content_color.label'
+                tooltip:    'ystools.system_configuration.field.icon_content_color.tooltip'
+                required:   false
+
     tree:
         system_configuration:
             commerce:
@@ -123,13 +189,25 @@ system_configuration:
                                         children:
                                             - ystools_dtc.company_logo
                                             - ystools_dtc.company_name
-                                    dtc_ui_color_configuration:
+                                    dtc_ui_main_element_color_configuration:
                                         children:
                                             - ystools_dtc.header_footer_bg_color
                                             - ystools_dtc.header_footer_text_color
+                                            - ystools_dtc.table_header_bg_color
+                                            - ystools_dtc.table_header_text_color
+                                    dtc_ui_secondary_element_color_configuration:
+                                        children:
+                                            - ystools_dtc.icon_bg_color
+                                            - ystools_dtc.icon_content_color
+                                    dtc_ui_menu_color_configuration:
+                                        children:
                                             - ystools_dtc.main_menu_bg_color
                                             - ystools_dtc.main_menu_text_color
                                             - ystools_dtc.secondary_menu_bg_color
                                             - ystools_dtc.secondary_menu_text_color
-                                            - ystools_dtc.table_header_bg_color
-                                            - ystools_dtc.table_header_text_color
+                                    dtc_ui_button_color_configuration:
+                                        children:
+                                            - ystools_dtc.main_button_bg_color
+                                            - ystools_dtc.main_button_text_color
+                                            - ystools_dtc.secondary_button_bg_color
+                                            - ystools_dtc.secondary_button_text_color

@@ -3,8 +3,11 @@ ystools:
         group:
             default_theme_configuration.label: 'Default Theme Configuration'
             logo_configuration.label: 'Logo Configuration'
-            ui_color_configuration.label: 'User Interface Colors'
-            ui_styling_configuration.label: 'User Interface Styling'
+            ui_main_element_color_configuration.label: 'Main Element Colors'
+            ui_secondary_element_color_configuration.label: 'Secondary Element Colors'
+            ui_menu_color_configuration.label: 'Menu Colors'
+            ui_button_color_configuration.label: 'Button Colors'
+            ui_additional_styling_configuration.label: 'Additional Styling'
             custom_css_styling_configuration.label: 'Custom CSS Styling'
 
         field:
@@ -38,3 +41,21 @@ ystools:
             table_header_text_color:
                 label: 'Table Header Text Color'
                 tooltip: 'The color of the text of table headers'
+            main_button_bg_color:
+                label: 'Main Button Background Color'
+                tooltip: 'The color of the background of main buttons'
+            main_button_text_color:
+                label: 'Main Button Text Color'
+                tooltip: 'The color of the text of main buttons'
+            secondary_button_bg_color:
+                label: 'Secondary Button Background Color'
+                tooltip: 'The color of the background of secondary buttons'
+            secondary_button_text_color:
+                label: 'Secondary Button Text Color'
+                tooltip: 'The color of the text of secondary buttons'
+            icon_bg_color:
+                label: 'Icon Background Color'
+                tooltip: 'The color of the icon background and highlighted element'
+            icon_content_color:
+                label: 'Icon Content Color'
+                tooltip: 'The color of the icon content'
