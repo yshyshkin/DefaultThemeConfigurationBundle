@@ -35,6 +35,9 @@ class Configuration implements ConfigurationInterface
                 'secondary_button_text_color'   => ['type' => 'string', 'value' => null],
                 'icon_bg_color'                 => ['type' => 'string', 'value' => null],
                 'icon_content_color'            => ['type' => 'string', 'value' => null],
+                'form_bg_color'                 => ['type' => 'string', 'value' => null],
+                'link_color'                    => ['type' => 'string', 'value' => null],
+                'font_family'                   => ['type' => 'string', 'value' => null],
             ]
         );
 

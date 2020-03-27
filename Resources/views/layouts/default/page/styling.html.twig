@@ -36,14 +36,16 @@
             .table thead th,
             .shopping-list-line-items__header,
             .product-prices__table .product-prices__th,
-            .checkout-order-summary__grid .checkout-order-summary__grid-th
+            .checkout-order-summary__grid .checkout-order-summary__grid-th,
+            .oro-grid-table thead th,
+            .cms-page table thead th
             {
                 background-color: {{ tableHeaderBgColor }} !important;
             }
 
-            .table,
             .table thead th,
-            .shopping-list-line-items__header
+            .shopping-list-line-items__header,
+            .oro-grid-table thead th
             {
                 border-color: {{ tableHeaderBgColor }} !important;
             }
@@ -60,7 +62,9 @@
             .table thead th .grid-header-cell__link,
             .shopping-list-line-items__header-label,
             .product-prices__table .product-prices__th,
-            .checkout-order-summary__grid .checkout-order-summary__grid-th
+            .checkout-order-summary__grid .checkout-order-summary__grid-th,
+            .oro-grid-table thead th,
+            .cms-page table thead th
             {
                 color: {{ tableHeaderTextColor }} !important;
             }
@@ -85,7 +89,8 @@
 
             .catalog-switcher .btn.active,
             .catalog-switcher .btn:not(.disabled):active,
-            .product-item__sku-value
+            .product-item__sku-value,
+            .customer-line-items__sku-value
             {
                 color: {{ iconBgColor }} !important;
             }
@@ -102,6 +107,66 @@
             .checkout-navigation__icon--complete
             {
                 color: {{ iconContentColor }} !important;
+            }
+        {% endif %}
+
+        {% set formBgColor = oro_config_value('ystools_dtc.form_bg_color') %}
+        {% if formBgColor %}
+            .address-form,
+            .customer_user_form .form-group .grid,
+            .request-form-container,
+            .request-form-editline,
+            .request-form-editnote,
+            .order-checkout-widget__container,
+            .checkout,
+            .editable,
+            .checkout-order-summary-container,
+            .quick-order,
+            .contact-us-form,
+            .quick-order-import__container,
+            .login-form,
+            .register-form,
+            .forgot-password-form,
+            .reset-password-form,
+            .check-email
+            {
+                background-color: {{ formBgColor }} !important;
+            }
+
+            .quick-order-import__container,
+            .request-form-editnote
+            {
+                filter: brightness(95%);
+            }
+        {% endif %}
+
+        {% set linkColor = oro_config_value('ystools_dtc.link_color') %}
+        {% if linkColor %}
+            a,
+            a:hover,
+            a:active,
+            .product-item__title a,
+            .product-item__title a:hover,
+            .product-item__title a:active,
+            .btn--link,
+            .btn--link:hover,
+            .btn--link:active,
+            .btn--link.active,
+            .btn--link:not(.disabled):active,
+            .btn--link:not(.disabled).active,
+            .collapse-view__trigger,
+            .product-price__value,
+            .shopping-list-dropdown__info,
+            .shopping-lists-units__actions
+            {
+                color: {{ linkColor }};
+            }
+
+            .custom-radio__input:checked ~ .custom-radio__text:before,
+            .custom-radio__control:checked ~ .custom-radio__text:before,
+            .custom-checkbox__input:checked ~ .custom-checkbox__icon
+            {
+                background-color: {{ linkColor }} !important;
             }
         {% endif %}
     </style>
@@ -193,7 +258,10 @@
                 border-color: {{ mainButtonBgColor }} !important;
             }
 
-            .checkout-form__req-text {
+            label.required em,
+            .checkout-form__req-text,
+            .required-label
+            {
                 color: {{ mainButtonBgColor }} !important;
             }
         {% endif %}
@@ -206,7 +274,7 @@
                 color: {{ mainButtonTextColor }} !important;
             }
 
-            .btn.btn--info:hover
+            .btn-group .btn.btn--info:hover:not(.dropdown-toggle)
             {
                 border-right-color: {{ mainButtonTextColor }} !important;
             }
@@ -240,3 +308,42 @@
     </style>
 {% endblock %}
 
+{% block _dtc_styles_global_additional_widget %}
+    <style type="text/css">
+        {% set supportedFontFamilies = {
+            'georgia'         : 'Georgia, serif',
+            'palatino'        : '"Palatino Linotype", "Book Antiqua", Palatino, serif',
+            'times'           : '"Times New Roman", Times, serif',
+            'arial'           : 'Arial, Helvetica, sans-serif',
+            'arial-black'     : '"Arial Black", Gadget, sans-serif',
+            'comic-sans'      : '"Comic Sans MS", cursive, sans-serif',
+            'impact'          : 'Impact, Charcoal, sans-serif',
+            'lucida'          : '"Lucida Sans Unicode", "Lucida Grande", sans-serif',
+            'tahoma'          : 'Tahoma, Geneva, sans-serif',
+            'trebuchet'       : '"Trebuchet MS", Helvetica, sans-serif',
+            'verdana'         : 'Verdana, Geneva, sans-serif',
+            'courier'         : '"Courier New", Courier, monospace',
+            'lucida-console'  : '"Lucida Console", Monaco, monospace'
+        } %}
+
+        {% set fontFamily = oro_config_value('ystools_dtc.font_family') %}
+        {% if fontFamily and supportedFontFamilies[fontFamily] %}
+            .body,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            button,
+            input,
+            textarea,
+            .btn,
+            .promo-slider__info a[href],
+            .ui-dialog
+            {
+                font-family: {{ supportedFontFamilies[fontFamily]|raw }} !important;
+            }
+        {% endif %}
+    </style>
+{% endblock %}

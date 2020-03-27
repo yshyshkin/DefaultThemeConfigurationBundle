@@ -59,3 +59,13 @@ ystools:
             icon_content_color:
                 label: 'Icon Content Color'
                 tooltip: 'The color of the icon content'
+            form_bg_color:
+                label: 'Form Background Color'
+                tooltip: 'The color of the standard forms background'
+            link_color:
+                label: 'Link Color'
+                tooltip: 'The color of the links'
+            font_family:
+                label: 'Font Family'
+                tooltip: 'Font used to render text information'
+                placeholder: 'Select a font...'

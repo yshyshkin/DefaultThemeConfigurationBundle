@@ -23,3 +23,7 @@ layout:
               id: dtc_styles_global_button
               parentId: dtc_styles_global
               blockType: block
+        - '@add':
+              id: dtc_styles_global_additional
+              parentId: dtc_styles_global
+              blockType: block

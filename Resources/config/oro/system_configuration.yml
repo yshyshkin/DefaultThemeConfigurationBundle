@@ -13,6 +13,8 @@ system_configuration:
             title: 'ystools.system_configuration.group.ui_menu_color_configuration.label'
         dtc_ui_button_color_configuration:
             title: 'ystools.system_configuration.group.ui_button_color_configuration.label'
+        dtc_ui_additional_styling_configuration:
+            title: 'ystools.system_configuration.group.ui_additional_styling_configuration.label'
 
     fields:
         ystools_dtc.company_logo:
@@ -176,6 +178,51 @@ system_configuration:
                 tooltip:    'ystools.system_configuration.field.icon_content_color.tooltip'
                 required:   false
 
+        ystools_dtc.form_bg_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 25
+            options:
+                label:      'ystools.system_configuration.field.form_bg_color.label'
+                tooltip:    'ystools.system_configuration.field.form_bg_color.tooltip'
+                required:   false
+
+        ystools_dtc.link_color:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ColorType
+            search_type: text
+            priority: 20
+            options:
+                label:      'ystools.system_configuration.field.link_color.label'
+                tooltip:    'ystools.system_configuration.field.link_color.tooltip'
+                required:   false
+
+        ystools_dtc.font_family:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\ChoiceType
+            search_type: choice
+            priority: 20
+            options:
+                label:      'ystools.system_configuration.field.font_family.label'
+                tooltip:    'ystools.system_configuration.field.font_family.tooltip'
+                required:   false
+                placeholder: 'ystools.system_configuration.field.font_family.placeholder'
+                choices:
+                    'Georgia': georgia
+                    'Palatino Linotype': palatino
+                    'Times New Roman': times
+                    'Arial': arial
+                    'Arial Black': arial-black
+                    'Comic Sans MS': comic-sans
+                    'Impact': impact
+                    'Lucida Sans Unicode': lucida
+                    'Tahoma': tahoma
+                    'Trebuchet MS': trebuchet
+                    'Verdana': verdana
+                    'Courier New': courier
+                    'Lucida Console': lucida-console
+
     tree:
         system_configuration:
             commerce:
@@ -199,6 +246,8 @@ system_configuration:
                                         children:
                                             - ystools_dtc.icon_bg_color
                                             - ystools_dtc.icon_content_color
+                                            - ystools_dtc.form_bg_color
+                                            - ystools_dtc.link_color
                                     dtc_ui_menu_color_configuration:
                                         children:
                                             - ystools_dtc.main_menu_bg_color
@@ -211,3 +260,6 @@ system_configuration:
                                             - ystools_dtc.main_button_text_color
                                             - ystools_dtc.secondary_button_bg_color
                                             - ystools_dtc.secondary_button_text_color
+                                    dtc_ui_additional_styling_configuration:
+                                        children:
+                                            - ystools_dtc.font_family
