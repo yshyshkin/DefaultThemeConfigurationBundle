@@ -1,16 +1,25 @@
 # Default Theme Configuration Bundle
 
-The bundle adds configuration to default OroCommerce theme from user interface without writing any code. 
-It allows to set multiple theme options (logo, colors etc) and customize visual representation of the storefront.
+The bundle allows configuring the default OroCommerce theme from the user interface without writing any code. 
+It allows setting multiple theme options (logo, colors, font, styling) and customize visual representation of the storefront.
 
-The bundle is compatible both with Community Edition and Enterprise Edition of OroCommerce.
+The bundle is compatible both with the Community Edition and Enterprise Edition of OroCommerce.
 
-TODO: table of contents
+* [Where Is Configuration?](#where-is-configuration)
+* [What Options Can Be Configured?](#what-options-can-be-configured)
+    * [Logo Configuration](#logo-configuration)
+    * [Main Colors](#main-colors)
+    * [Secondary Colors](#secondary-colors)
+    * [Menu Colors](#menu-colors)
+    * [Button Colors](#button-colors)
+    * [Additional Styling](#additional-styling)
+    * [CSS Styling](#css-styling)
+* [How To Thank The Author?](#how-to-thank-the-author)
 
 
 ## Where Is Configuration?
 
-Default theme configuration have to be set in System Configuration. It can be found in management console menu
+The default theme configuration has to be set in System Configuration. It can be found in the management console menu
 _System > Configuration_ inside the _Commerce > Design > Default Theme Configuration_ section.
 
 ![Configuration Placement](Resources/doc/img/configuration-placement.png)
@@ -119,7 +128,7 @@ may override it
 
 ## How To Thank The Author?
 
-If this bundle helped you and you are feeling generous today then you can thank the author
+If this bundle helped you and you are feeling generous today, then you can thank the author
 and support this initiative using the following button.
 
 [![Paypal Donation](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J9945JLRB47N2&source=url)

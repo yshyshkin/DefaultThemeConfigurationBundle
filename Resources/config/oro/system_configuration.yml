@@ -204,7 +204,7 @@ system_configuration:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\ChoiceType
             search_type: choice
-            priority: 20
+            priority: 15
             options:
                 label:      'ystools.system_configuration.field.font_family.label'
                 tooltip:    'ystools.system_configuration.field.font_family.tooltip'
@@ -239,7 +239,7 @@ system_configuration:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextareaType
             search_type: text
-            priority: 100
+            priority: 90
             options:
                 label:      'ystools.system_configuration.field.custom_css_home.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_home.tooltip'
@@ -249,7 +249,7 @@ system_configuration:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextareaType
             search_type: text
-            priority: 100
+            priority: 80
             options:
                 label:      'ystools.system_configuration.field.custom_css_plp.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_plp.tooltip'
@@ -259,7 +259,7 @@ system_configuration:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextareaType
             search_type: text
-            priority: 100
+            priority: 70
             options:
                 label:      'ystools.system_configuration.field.custom_css_pdp.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_pdp.tooltip'
@@ -269,7 +269,7 @@ system_configuration:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextareaType
             search_type: text
-            priority: 100
+            priority: 60
             options:
                 label:      'ystools.system_configuration.field.custom_css_qof.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_qof.tooltip'
@@ -279,7 +279,7 @@ system_configuration:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextareaType
             search_type: text
-            priority: 100
+            priority: 50
             options:
                 label:      'ystools.system_configuration.field.custom_css_shopping_list.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_shopping_list.tooltip'
@@ -289,7 +289,7 @@ system_configuration:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextareaType
             search_type: text
-            priority: 100
+            priority: 40
             options:
                 label:      'ystools.system_configuration.field.custom_css_checkout.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_checkout.tooltip'
