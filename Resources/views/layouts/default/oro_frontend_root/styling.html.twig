@@ -1,0 +1,8 @@
+{% block _dtc_styles_home_custom_css_widget %}
+    <style type="text/css">
+        {% set customCssHome = oro_config_value('ystools_dtc.custom_css_home') %}
+        {% if customCssHome %}
+            {{ customCssHome|striptags|raw }}
+        {% endif %}
+    </style>
+{% endblock %}

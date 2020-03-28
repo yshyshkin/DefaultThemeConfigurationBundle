@@ -1,0 +1,8 @@
+{% block _dtc_styles_qof_custom_css_widget %}
+    <style type="text/css">
+        {% set customCssQof = oro_config_value('ystools_dtc.custom_css_qof') %}
+        {% if customCssQof %}
+            {{ customCssQof|striptags|raw }}
+        {% endif %}
+    </style>
+{% endblock %}

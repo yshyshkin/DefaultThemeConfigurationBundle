@@ -27,3 +27,7 @@ layout:
               id: dtc_styles_global_additional
               parentId: dtc_styles_global
               blockType: block
+        - '@add':
+              id: dtc_styles_global_custom_css
+              parentId: dtc_styles_global
+              blockType: block

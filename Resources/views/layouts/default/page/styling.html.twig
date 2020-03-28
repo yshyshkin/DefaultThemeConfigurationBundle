@@ -145,6 +145,9 @@
             a,
             a:hover,
             a:active,
+            .link,
+            .link:hover,
+            .link:active,
             .product-item__title a,
             .product-item__title a:hover,
             .product-item__title a:active,
@@ -156,6 +159,7 @@
             .btn--link:not(.disabled).active,
             .collapse-view__trigger,
             .product-price__value,
+            .order-checkout-widget__total-price,
             .shopping-list-dropdown__info,
             .shopping-lists-units__actions
             {
@@ -223,6 +227,13 @@
             .page-sidebar .shopping-list__item:hover
             {
                 background-color: {{ secondaryMenuBgColor }} !important;
+            }
+
+            @media (max-width: 1099px) {
+                .nav-trigger .main-menu__item--nested
+                {
+                    background-color: transparent !important;
+                }
             }
         {% endif %}
 
@@ -338,12 +349,22 @@
             button,
             input,
             textarea,
+            .select,
             .btn,
             .promo-slider__info a[href],
             .ui-dialog
             {
                 font-family: {{ supportedFontFamilies[fontFamily]|raw }} !important;
             }
+        {% endif %}
+    </style>
+{% endblock %}
+
+{% block _dtc_styles_global_custom_css_widget %}
+    <style type="text/css">
+        {% set customCssGlobal = oro_config_value('ystools_dtc.custom_css_global') %}
+        {% if customCssGlobal %}
+            {{ customCssGlobal|striptags|raw }}
         {% endif %}
     </style>
 {% endblock %}

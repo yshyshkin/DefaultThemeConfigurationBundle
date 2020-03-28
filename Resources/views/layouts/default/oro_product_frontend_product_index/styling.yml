@@ -1,0 +1,9 @@
+layout:
+    actions:
+        - '@setBlockTheme':
+              themes: 'styling.html.twig'
+        - '@add':
+              id: dtc_styles_plp_custom_css
+              parentId: dtc_styles_global
+              siblingId: dtc_styles_global_custom_css
+              blockType: block

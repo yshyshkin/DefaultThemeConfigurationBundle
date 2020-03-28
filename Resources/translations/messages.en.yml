@@ -3,12 +3,12 @@ ystools:
         group:
             default_theme_configuration.label: 'Default Theme Configuration'
             logo_configuration.label: 'Logo Configuration'
-            ui_main_element_color_configuration.label: 'Main Element Colors'
-            ui_secondary_element_color_configuration.label: 'Secondary Element Colors'
+            ui_main_element_color_configuration.label: 'Main Colors'
+            ui_secondary_element_color_configuration.label: 'Secondary Colors'
             ui_menu_color_configuration.label: 'Menu Colors'
             ui_button_color_configuration.label: 'Button Colors'
             ui_additional_styling_configuration.label: 'Additional Styling'
-            custom_css_styling_configuration.label: 'Custom CSS Styling'
+            custom_css_styling_configuration.label: 'CSS Styling'
 
         field:
             company_name:
@@ -69,3 +69,24 @@ ystools:
                 label: 'Font Family'
                 tooltip: 'Font used to render text information'
                 placeholder: 'Select a font...'
+            custom_css_global:
+                label: 'Global Styling'
+                tooltip: 'CSS styles applicable to every page on storefront'
+            custom_css_home:
+                label: 'Home Page Styling'
+                tooltip: 'CSS styles applicable to home page only'
+            custom_css_plp:
+                label: 'Product Listing Page Styling'
+                tooltip: 'CSS styles applicable to product listing page only'
+            custom_css_pdp:
+                label: 'Product Details Page Styling'
+                tooltip: 'CSS styles applicable to product details page only'
+            custom_css_qof:
+                label: 'Quick Order Form Styling'
+                tooltip: 'CSS styles applicable to quick order form page only'
+            custom_css_shopping_list:
+                label: 'Shopping List Styling'
+                tooltip: 'CSS styles applicable to shopping list page only'
+            custom_css_checkout:
+                label: 'Checkout Styling'
+                tooltip: 'CSS styles applicable to checkout page only'

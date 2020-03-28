@@ -38,6 +38,13 @@ class Configuration implements ConfigurationInterface
                 'form_bg_color'                 => ['type' => 'string', 'value' => null],
                 'link_color'                    => ['type' => 'string', 'value' => null],
                 'font_family'                   => ['type' => 'string', 'value' => null],
+                'custom_css_global'             => ['type' => 'string', 'value' => null],
+                'custom_css_home'               => ['type' => 'string', 'value' => null],
+                'custom_css_plp'                => ['type' => 'string', 'value' => null],
+                'custom_css_pdp'                => ['type' => 'string', 'value' => null],
+                'custom_css_qof'                => ['type' => 'string', 'value' => null],
+                'custom_css_shopping_list'      => ['type' => 'string', 'value' => null],
+                'custom_css_checkout'           => ['type' => 'string', 'value' => null],
             ]
         );
 

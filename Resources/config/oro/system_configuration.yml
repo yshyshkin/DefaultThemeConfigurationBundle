@@ -15,6 +15,8 @@ system_configuration:
             title: 'ystools.system_configuration.group.ui_button_color_configuration.label'
         dtc_ui_additional_styling_configuration:
             title: 'ystools.system_configuration.group.ui_additional_styling_configuration.label'
+        dtc_ui_custom_css_styling_configuration:
+            title: 'ystools.system_configuration.group.custom_css_styling_configuration.label'
 
     fields:
         ystools_dtc.company_logo:
@@ -223,6 +225,76 @@ system_configuration:
                     'Courier New': courier
                     'Lucida Console': lucida-console
 
+        ystools_dtc.custom_css_global:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            search_type: text
+            priority: 100
+            options:
+                label:      'ystools.system_configuration.field.custom_css_global.label'
+                tooltip:    'ystools.system_configuration.field.custom_css_global.tooltip'
+                required:   false
+
+        ystools_dtc.custom_css_home:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            search_type: text
+            priority: 100
+            options:
+                label:      'ystools.system_configuration.field.custom_css_home.label'
+                tooltip:    'ystools.system_configuration.field.custom_css_home.tooltip'
+                required:   false
+
+        ystools_dtc.custom_css_plp:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            search_type: text
+            priority: 100
+            options:
+                label:      'ystools.system_configuration.field.custom_css_plp.label'
+                tooltip:    'ystools.system_configuration.field.custom_css_plp.tooltip'
+                required:   false
+
+        ystools_dtc.custom_css_pdp:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            search_type: text
+            priority: 100
+            options:
+                label:      'ystools.system_configuration.field.custom_css_pdp.label'
+                tooltip:    'ystools.system_configuration.field.custom_css_pdp.tooltip'
+                required:   false
+
+        ystools_dtc.custom_css_qof:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            search_type: text
+            priority: 100
+            options:
+                label:      'ystools.system_configuration.field.custom_css_qof.label'
+                tooltip:    'ystools.system_configuration.field.custom_css_qof.tooltip'
+                required:   false
+
+        ystools_dtc.custom_css_shopping_list:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            search_type: text
+            priority: 100
+            options:
+                label:      'ystools.system_configuration.field.custom_css_shopping_list.label'
+                tooltip:    'ystools.system_configuration.field.custom_css_shopping_list.tooltip'
+                required:   false
+
+        ystools_dtc.custom_css_checkout:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            search_type: text
+            priority: 100
+            options:
+                label:      'ystools.system_configuration.field.custom_css_checkout.label'
+                tooltip:    'ystools.system_configuration.field.custom_css_checkout.tooltip'
+                required:   false
+
     tree:
         system_configuration:
             commerce:
@@ -263,3 +335,12 @@ system_configuration:
                                     dtc_ui_additional_styling_configuration:
                                         children:
                                             - ystools_dtc.font_family
+                                    dtc_ui_custom_css_styling_configuration:
+                                        children:
+                                            - ystools_dtc.custom_css_global
+                                            - ystools_dtc.custom_css_home
+                                            - ystools_dtc.custom_css_plp
+                                            - ystools_dtc.custom_css_pdp
+                                            - ystools_dtc.custom_css_qof
+                                            - ystools_dtc.custom_css_shopping_list
+                                            - ystools_dtc.custom_css_checkout
