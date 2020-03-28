@@ -11,23 +11,53 @@ layout:
               id: dtc_styles_global_main_element
               parentId: dtc_styles_global
               blockType: block
+              options:
+                  vars:
+                      headerFooterBgColor:      '=data["system_config_provider"].getValue("ystools_dtc.header_footer_bg_color")'
+                      headerFooterTextColor:    '=data["system_config_provider"].getValue("ystools_dtc.header_footer_text_color")'
+                      tableHeaderBgColor:       '=data["system_config_provider"].getValue("ystools_dtc.table_header_bg_color")'
+                      tableHeaderTextColor:     '=data["system_config_provider"].getValue("ystools_dtc.table_header_text_color")'
         - '@add':
               id: dtc_styles_global_secondary_element
               parentId: dtc_styles_global
               blockType: block
+              options:
+                  vars:
+                      iconBgColor:              '=data["system_config_provider"].getValue("ystools_dtc.icon_bg_color")'
+                      iconContentColor:         '=data["system_config_provider"].getValue("ystools_dtc.icon_content_color")'
+                      formBgColor:              '=data["system_config_provider"].getValue("ystools_dtc.form_bg_color")'
+                      linkColor:                '=data["system_config_provider"].getValue("ystools_dtc.link_color")'
         - '@add':
               id: dtc_styles_global_menu
               parentId: dtc_styles_global
               blockType: block
+              options:
+                  vars:
+                      mainMenuBgColor:          '=data["system_config_provider"].getValue("ystools_dtc.main_menu_bg_color")'
+                      mainMenuTextColor:        '=data["system_config_provider"].getValue("ystools_dtc.main_menu_text_color")'
+                      secondaryMenuBgColor:     '=data["system_config_provider"].getValue("ystools_dtc.secondary_menu_bg_color")'
+                      secondaryMenuTextColor:   '=data["system_config_provider"].getValue("ystools_dtc.secondary_menu_text_color")'
         - '@add':
               id: dtc_styles_global_button
               parentId: dtc_styles_global
               blockType: block
+              options:
+                  vars:
+                      mainButtonBgColor:        '=data["system_config_provider"].getValue("ystools_dtc.main_button_bg_color")'
+                      mainButtonTextColor:      '=data["system_config_provider"].getValue("ystools_dtc.main_button_text_color")'
+                      secondaryButtonBgColor:   '=data["system_config_provider"].getValue("ystools_dtc.secondary_button_bg_color")'
+                      secondaryButtonTextColor: '=data["system_config_provider"].getValue("ystools_dtc.secondary_button_text_color")'
         - '@add':
               id: dtc_styles_global_additional
               parentId: dtc_styles_global
               blockType: block
+              options:
+                  vars:
+                      fontFamily:               '=data["system_config_provider"].getValue("ystools_dtc.font_family")'
         - '@add':
               id: dtc_styles_global_custom_css
               parentId: dtc_styles_global
               blockType: block
+              options:
+                  vars:
+                      customCssGlobal:          '=data["system_config_provider"].getValue("ystools_dtc.custom_css_global")'

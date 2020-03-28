@@ -1,8 +1,7 @@
 {% block _dtc_styles_checkout_custom_css_widget %}
-    <style type="text/css">
-        {% set customCssCheckout = dtc_config_value('ystools_dtc.custom_css_checkout') %}
-        {% if customCssCheckout %}
+    {% if customCssCheckout %}
+        <style type="text/css">
             {{ customCssCheckout|striptags|raw }}
-        {% endif %}
-    </style>
+        </style>
+    {% endif %}
 {% endblock %}

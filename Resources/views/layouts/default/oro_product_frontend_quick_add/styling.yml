@@ -7,3 +7,6 @@ layout:
               parentId: dtc_styles_global
               siblingId: dtc_styles_global_custom_css
               blockType: block
+              options:
+                  vars:
+                      customCssQof: '=data["system_config_provider"].getValue("ystools_dtc.custom_css_qof")'

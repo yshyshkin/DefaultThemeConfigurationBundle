@@ -6,7 +6,7 @@
         {% set attr_img = attr_img|merge({'src' : companyLogo, 'class': 'dtc-company-logo'}) %}
     {% endif %}
 
-    {% set companyName = dtc_config_value('ystools_dtc.company_name') %}
+    {% set companyName = dtc_company_name() %}
     {% if companyName %}
         {% set attr_img = attr_img|merge({'alt' : companyName}) %}
     {% endif %}

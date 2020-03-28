@@ -1,8 +1,7 @@
 {% block _dtc_styles_qof_custom_css_widget %}
-    <style type="text/css">
-        {% set customCssQof = dtc_config_value('ystools_dtc.custom_css_qof') %}
-        {% if customCssQof %}
+    {% if customCssQof %}
+        <style type="text/css">
             {{ customCssQof|striptags|raw }}
-        {% endif %}
-    </style>
+        </style>
+    {% endif %}
 {% endblock %}

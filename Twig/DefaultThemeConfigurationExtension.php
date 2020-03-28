@@ -31,8 +31,7 @@ class DefaultThemeConfigurationExtension extends AbstractExtension implements Se
     {
         return [
             new TwigFunction('dtc_company_logo', [$this, 'getCompanyLogo']),
-            // default twig function oro_config_value is not used as it uses *user* scope value, not the current ones
-            new TwigFunction('dtc_config_value', [$this, 'getConfigValue']),
+            new TwigFunction('dtc_company_name', [$this, 'getCompanyName']),
         ];
     }
 
@@ -56,12 +55,11 @@ class DefaultThemeConfigurationExtension extends AbstractExtension implements Se
     }
 
     /**
-     * @param string $key
-     * @return mixed
+     * @return string|null
      */
-    public function getConfigValue($key)
+    public function getCompanyName()
     {
-        return $this->container->get('oro_config.manager')->get($key);
+        return $this->container->get('oro_config.manager')->get('ystools_dtc.company_name');
     }
 
     /**
