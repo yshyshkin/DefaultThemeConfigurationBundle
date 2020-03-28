@@ -15,7 +15,7 @@
         "oro/commerce": "~4.1.1"
     },
     "autoload": {
-        "psr-4": { "YsTools\\Bundle\\DefaultThemeConfigurationBundle": "" },
+        "psr-4": { "YsTools\\Bundle\\DefaultThemeConfigurationBundle\\": "" },
         "exclude-from-classmap": ["/Tests/"]
     },
     "minimum-stability": "dev",
