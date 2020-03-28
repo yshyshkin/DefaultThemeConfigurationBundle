@@ -344,3 +344,51 @@ system_configuration:
                                             - ystools_dtc.custom_css_qof
                                             - ystools_dtc.custom_css_shopping_list
                                             - ystools_dtc.custom_css_checkout
+        website_configuration:
+            commerce:
+                children:
+                    design:
+                        children:
+                            dtc_default_theme_configuration:
+                                priority: -100
+                                children:
+                                    dtc_logo_configuration:
+                                        children:
+                                            - ystools_dtc.company_logo
+                                            - ystools_dtc.company_name
+                                    dtc_ui_main_element_color_configuration:
+                                        children:
+                                            - ystools_dtc.header_footer_bg_color
+                                            - ystools_dtc.header_footer_text_color
+                                            - ystools_dtc.table_header_bg_color
+                                            - ystools_dtc.table_header_text_color
+                                    dtc_ui_secondary_element_color_configuration:
+                                        children:
+                                            - ystools_dtc.icon_bg_color
+                                            - ystools_dtc.icon_content_color
+                                            - ystools_dtc.form_bg_color
+                                            - ystools_dtc.link_color
+                                    dtc_ui_menu_color_configuration:
+                                        children:
+                                            - ystools_dtc.main_menu_bg_color
+                                            - ystools_dtc.main_menu_text_color
+                                            - ystools_dtc.secondary_menu_bg_color
+                                            - ystools_dtc.secondary_menu_text_color
+                                    dtc_ui_button_color_configuration:
+                                        children:
+                                            - ystools_dtc.main_button_bg_color
+                                            - ystools_dtc.main_button_text_color
+                                            - ystools_dtc.secondary_button_bg_color
+                                            - ystools_dtc.secondary_button_text_color
+                                    dtc_ui_additional_styling_configuration:
+                                        children:
+                                            - ystools_dtc.font_family
+                                    dtc_ui_custom_css_styling_configuration:
+                                        children:
+                                            - ystools_dtc.custom_css_global
+                                            - ystools_dtc.custom_css_home
+                                            - ystools_dtc.custom_css_plp
+                                            - ystools_dtc.custom_css_pdp
+                                            - ystools_dtc.custom_css_qof
+                                            - ystools_dtc.custom_css_shopping_list
+                                            - ystools_dtc.custom_css_checkout

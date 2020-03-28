@@ -1,6 +1,6 @@
 {% block _dtc_styles_pdp_custom_css_widget %}
     <style type="text/css">
-        {% set customCssPdp = oro_config_value('ystools_dtc.custom_css_pdp') %}
+        {% set customCssPdp = dtc_config_value('ystools_dtc.custom_css_pdp') %}
         {% if customCssPdp %}
             {{ customCssPdp|striptags|raw }}
         {% endif %}

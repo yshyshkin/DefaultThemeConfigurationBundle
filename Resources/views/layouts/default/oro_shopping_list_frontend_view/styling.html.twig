@@ -1,6 +1,6 @@
 {% block _dtc_styles_shopping_list_custom_css_widget %}
     <style type="text/css">
-        {% set customCssShoppingList = oro_config_value('ystools_dtc.custom_css_shopping_list') %}
+        {% set customCssShoppingList = dtc_config_value('ystools_dtc.custom_css_shopping_list') %}
         {% if customCssShoppingList %}
             {{ customCssShoppingList|striptags|raw }}
         {% endif %}

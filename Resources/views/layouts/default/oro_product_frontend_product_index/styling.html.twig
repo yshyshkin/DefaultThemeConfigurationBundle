@@ -1,6 +1,6 @@
 {% block _dtc_styles_plp_custom_css_widget %}
     <style type="text/css">
-        {% set customCssPlp = oro_config_value('ystools_dtc.custom_css_plp') %}
+        {% set customCssPlp = dtc_config_value('ystools_dtc.custom_css_plp') %}
         {% if customCssPlp %}
             {{ customCssPlp|striptags|raw }}
         {% endif %}

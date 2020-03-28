@@ -1,6 +1,6 @@
 {% block _dtc_styles_global_main_element_widget %}
     <style type="text/css">
-        {% set headerFooterBgColor = oro_config_value('ystools_dtc.header_footer_bg_color') %}
+        {% set headerFooterBgColor = dtc_config_value('ystools_dtc.header_footer_bg_color') %}
         {% if headerFooterBgColor %}
             .topbar,
             .page-footer
@@ -15,7 +15,7 @@
             }
         {% endif %}
 
-        {% set headerFooterTextColor = oro_config_value('ystools_dtc.header_footer_text_color') %}
+        {% set headerFooterTextColor = dtc_config_value('ystools_dtc.header_footer_text_color') %}
         {% if headerFooterTextColor %}
             .topbar,
             .topbar a,
@@ -31,7 +31,7 @@
             }
         {% endif %}
 
-        {% set tableHeaderBgColor = oro_config_value('ystools_dtc.table_header_bg_color') %}
+        {% set tableHeaderBgColor = dtc_config_value('ystools_dtc.table_header_bg_color') %}
         {% if tableHeaderBgColor %}
             .table thead th,
             .shopping-list-line-items__header,
@@ -56,7 +56,7 @@
             }
         {% endif %}
 
-        {% set tableHeaderTextColor = oro_config_value('ystools_dtc.table_header_text_color') %}
+        {% set tableHeaderTextColor = dtc_config_value('ystools_dtc.table_header_text_color') %}
         {% if tableHeaderTextColor %}
             .table thead th,
             .table thead th .grid-header-cell__link,
@@ -74,7 +74,7 @@
 
 {% block _dtc_styles_global_secondary_element_widget %}
     <style type="text/css">
-        {% set iconBgColor = oro_config_value('ystools_dtc.icon_bg_color') %}
+        {% set iconBgColor = dtc_config_value('ystools_dtc.icon_bg_color') %}
         {% if iconBgColor %}
             .cart-widget__icon,
             .shopping-list__item-indicator,
@@ -82,7 +82,8 @@
             .badge,
             .checkout__title-icon,
             .checkout-navigation__icon--current,
-            .checkout-navigation__icon--complete
+            .checkout-navigation__icon--complete,
+            .cart-list-empty__icon
             {
                 background-color: {{ iconBgColor }} !important;
             }
@@ -96,7 +97,7 @@
             }
         {% endif %}
 
-        {% set iconContentColor = oro_config_value('ystools_dtc.icon_content_color') %}
+        {% set iconContentColor = dtc_config_value('ystools_dtc.icon_content_color') %}
         {% if iconContentColor %}
             .cart-widget__icon,
             .shopping-list__item-indicator,
@@ -104,13 +105,14 @@
             .badge,
             .checkout__title-icon,
             .checkout-navigation__icon--current,
-            .checkout-navigation__icon--complete
+            .checkout-navigation__icon--complete,
+            .cart-list-empty__icon
             {
                 color: {{ iconContentColor }} !important;
             }
         {% endif %}
 
-        {% set formBgColor = oro_config_value('ystools_dtc.form_bg_color') %}
+        {% set formBgColor = dtc_config_value('ystools_dtc.form_bg_color') %}
         {% if formBgColor %}
             .address-form,
             .customer_user_form .form-group .grid,
@@ -140,7 +142,7 @@
             }
         {% endif %}
 
-        {% set linkColor = oro_config_value('ystools_dtc.link_color') %}
+        {% set linkColor = dtc_config_value('ystools_dtc.link_color') %}
         {% if linkColor %}
             a,
             a:hover,
@@ -178,7 +180,7 @@
 
 {% block _dtc_styles_global_menu_widget %}
     <style type="text/css">
-        {% set mainMenuBgColor = oro_config_value('ystools_dtc.main_menu_bg_color') %}
+        {% set mainMenuBgColor = dtc_config_value('ystools_dtc.main_menu_bg_color') %}
         {% if mainMenuBgColor %}
             .main-menu-outer,
             .main-menu__sublist-container,
@@ -193,7 +195,7 @@
             }
         {% endif %}
 
-        {% set mainMenuTextColor = oro_config_value('ystools_dtc.main_menu_text_color') %}
+        {% set mainMenuTextColor = dtc_config_value('ystools_dtc.main_menu_text_color') %}
         {% if mainMenuTextColor %}
             .main-menu-outer a,
             .main-menu-outer p,
@@ -203,7 +205,7 @@
             }
         {% endif %}
 
-        {% set secondaryMenuBgColor = oro_config_value('ystools_dtc.secondary_menu_bg_color') %}
+        {% set secondaryMenuBgColor = dtc_config_value('ystools_dtc.secondary_menu_bg_color') %}
         {% if secondaryMenuBgColor %}
             .main-menu__sublist-container,
             .header-row__wrapper,
@@ -237,7 +239,7 @@
             }
         {% endif %}
 
-        {% set secondaryMenuTextColor = oro_config_value('ystools_dtc.secondary_menu_text_color') %}
+        {% set secondaryMenuTextColor = dtc_config_value('ystools_dtc.secondary_menu_text_color') %}
         {% if secondaryMenuTextColor %}
             .shopping-list-widget .main-menu__item,
             .header-row__dropdown-footer button,
@@ -255,7 +257,7 @@
 
 {% block _dtc_styles_global_button_widget %}
     <style type="text/css">
-        {% set mainButtonBgColor = oro_config_value('ystools_dtc.main_button_bg_color') %}
+        {% set mainButtonBgColor = dtc_config_value('ystools_dtc.main_button_bg_color') %}
         {% if mainButtonBgColor %}
             .btn.btn--info,
             .promo-slider__info a[href]
@@ -277,7 +279,7 @@
             }
         {% endif %}
 
-        {% set mainButtonTextColor = oro_config_value('ystools_dtc.main_button_text_color') %}
+        {% set mainButtonTextColor = dtc_config_value('ystools_dtc.main_button_text_color') %}
         {% if mainButtonTextColor %}
             .btn.btn--info,
             .promo-slider__info a[href]
@@ -296,7 +298,7 @@
             }
         {% endif %}
 
-        {% set secondaryButtonBgColor = oro_config_value('ystools_dtc.secondary_button_bg_color') %}
+        {% set secondaryButtonBgColor = dtc_config_value('ystools_dtc.secondary_button_bg_color') %}
         {% if secondaryButtonBgColor %}
             .btn:not(.btn--info):not(.btn--link):not(.btn--default):not(.btn--plain)
             {
@@ -309,7 +311,7 @@
             }
         {% endif %}
 
-        {% set secondaryButtonTextColor = oro_config_value('ystools_dtc.secondary_button_text_color') %}
+        {% set secondaryButtonTextColor = dtc_config_value('ystools_dtc.secondary_button_text_color') %}
         {% if secondaryButtonTextColor %}
             .btn:not(.btn--info):not(.btn--link):not(.btn--default):not(.btn--plain)
             {
@@ -337,7 +339,7 @@
             'lucida-console'  : '"Lucida Console", Monaco, monospace'
         } %}
 
-        {% set fontFamily = oro_config_value('ystools_dtc.font_family') %}
+        {% set fontFamily = dtc_config_value('ystools_dtc.font_family') %}
         {% if fontFamily and supportedFontFamilies[fontFamily] %}
             .body,
             h1,
@@ -362,7 +364,7 @@
 
 {% block _dtc_styles_global_custom_css_widget %}
     <style type="text/css">
-        {% set customCssGlobal = oro_config_value('ystools_dtc.custom_css_global') %}
+        {% set customCssGlobal = dtc_config_value('ystools_dtc.custom_css_global') %}
         {% if customCssGlobal %}
             {{ customCssGlobal|striptags|raw }}
         {% endif %}

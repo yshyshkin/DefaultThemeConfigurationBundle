@@ -1,6 +1,6 @@
 {% block _dtc_styles_checkout_custom_css_widget %}
     <style type="text/css">
-        {% set customCssCheckout = oro_config_value('ystools_dtc.custom_css_checkout') %}
+        {% set customCssCheckout = dtc_config_value('ystools_dtc.custom_css_checkout') %}
         {% if customCssCheckout %}
             {{ customCssCheckout|striptags|raw }}
         {% endif %}

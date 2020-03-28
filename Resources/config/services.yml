@@ -6,3 +6,10 @@ services:
             - '@oro_platform.twig.service_locator'
         tags:
             - { name: twig.extension }
+
+    # data transformer is overridden to fix file upload issue
+    oro_config.form.config_file_data_transformer:
+        class: 'YsTools\Bundle\DefaultThemeConfigurationBundle\Form\DataTransformer\ConfigFileDataTransformer'
+        arguments:
+            - '@oro_entity.doctrine_helper'
+            - '@validator'
