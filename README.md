@@ -5,6 +5,7 @@ It allows setting multiple theme options (logo, colors, font, styling) and custo
 
 The bundle is compatible both with the Community Edition and Enterprise Edition of OroCommerce.
 
+* [How To Install The Bundle](#how-to-install-the-bundle)
 * [Where Is Configuration?](#where-is-configuration)
 * [What Options Can Be Configured?](#what-options-can-be-configured)
     * [Logo Configuration](#logo-configuration)
@@ -14,7 +15,22 @@ The bundle is compatible both with the Community Edition and Enterprise Edition 
     * [Button Colors](#button-colors)
     * [Additional Styling](#additional-styling)
     * [CSS Styling](#css-styling)
-* [How To Thank The Author?](#how-to-thank-the-author)
+* [How To Thank The Author](#how-to-thank-the-author)
+
+
+## How To Install The Bundle
+
+Open the OroCommerce application root and run the following command:
+
+```
+composer require ys-tools/default-theme-configuration-bundle
+```
+
+If application is already installed then cache has to be cleared manually:
+
+```
+php bin/console cache:clear --env=prod
+```
 
 
 ## Where Is Configuration?
@@ -126,7 +142,7 @@ may override it
 ![CSS Styling Example](Resources/doc/img/css-styling-example.png)
 
 
-## How To Thank The Author?
+## How To Thank The Author
 
 If this bundle helped you and you are feeling generous today, then you can thank the author
 and support this initiative using the following button.
