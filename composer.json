@@ -1,0 +1,20 @@
+{
+    "name": "ys-tools/default-theme-configuration-bundle",
+    "description": "OroCommerce Default Theme Configuration Bundle",
+    "keywords": ["oro","commerce","default","theme","configuration"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yevhen Shyshkin",
+            "email": "shishkin.yevgeniy@gmail.com"
+        }
+    ],
+    "require": {
+        "oro/commerce": "~4.1.1"
+    },
+    "autoload": {
+        "psr-0": { "YsTools\\Bundle\\DefaultThemeConfigurationBundle": "" }
+    },
+    "target-dir": "YsTools/Bundle/DefaultThemeConfigurationBundle"
+}

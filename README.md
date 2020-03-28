@@ -1,4 +1,4 @@
-# Default Theme Configuration Bundle
+# OroCommerce Default Theme Configuration Bundle
 
 The bundle allows configuring the default OroCommerce theme from the user interface without writing any code. 
 It allows setting multiple theme options (logo, colors, font, styling) and customize visual representation of the storefront.
