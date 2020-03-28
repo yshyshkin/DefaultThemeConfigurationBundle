@@ -26,7 +26,7 @@ Open the OroCommerce application root and run the following command:
 composer require ys-tools/default-theme-configuration-bundle
 ```
 
-If application is already installed then cache has to be cleared manually:
+If the application is already installed, then cache has to be cleared manually:
 
 ```
 php bin/console cache:clear --env=prod
