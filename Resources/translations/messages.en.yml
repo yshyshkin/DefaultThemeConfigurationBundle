@@ -69,6 +69,9 @@ ystools:
                 label: 'Font Family'
                 tooltip: 'Font used to render text information'
                 placeholder: 'Select a font...'
+            external_stylesheets:
+                label: 'External Stylesheets'
+                tooltip: 'Links of external stylesheets, e.g. Google Fonts'
             custom_css_global:
                 label: 'Global Styling'
                 tooltip: 'CSS styles applicable to every page on storefront'

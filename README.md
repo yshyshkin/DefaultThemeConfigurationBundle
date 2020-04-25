@@ -126,7 +126,10 @@ while Enterprise Edition supports both global and website level configuration.
 
 **Font Family** sets the font used all over the storefront
 
+**External Stylesheets** adds multiple external stylesheets as link tags
+
 ![Additional Styling Example](Resources/doc/img/additional-styling-example.png)
+![Additional Styling Example 2](Resources/doc/img/additional-styling-example-2.png)
 
 
 ### CSS Styling

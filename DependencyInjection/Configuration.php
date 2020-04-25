@@ -38,6 +38,7 @@ class Configuration implements ConfigurationInterface
                 'form_bg_color'                 => ['type' => 'string', 'value' => null],
                 'link_color'                    => ['type' => 'string', 'value' => null],
                 'font_family'                   => ['type' => 'string', 'value' => null],
+                'external_stylesheets'          => ['type' => 'array', 'value' => []],
                 'custom_css_global'             => ['type' => 'string', 'value' => null],
                 'custom_css_home'               => ['type' => 'string', 'value' => null],
                 'custom_css_plp'                => ['type' => 'string', 'value' => null],
