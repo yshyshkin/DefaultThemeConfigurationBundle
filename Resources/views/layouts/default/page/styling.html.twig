@@ -308,6 +308,14 @@
 {% endblock %}
 
 {% block _dtc_styles_global_additional_widget %}
+    {% if externalStylesheets %}
+        {% for stylesheet in externalStylesheets %}
+            {% if stylesheet.url %}
+                <link rel="stylesheet" href="{{ stylesheet.url }}" />
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
     <style type="text/css">
         {% set supportedFontFamilies = {
             'georgia'         : 'Georgia, serif',
@@ -325,7 +333,14 @@
             'lucida-console'  : '"Lucida Console", Monaco, monospace'
         } %}
 
-        {% if fontFamily and supportedFontFamilies[fontFamily] %}
+        {% set resolvedFontFamily = null %}
+        {% if customFontFamily %}
+            {% set resolvedFontFamily = customFontFamily %}
+        {% elseif fontFamily and supportedFontFamilies[fontFamily] %}
+            {% set resolvedFontFamily = supportedFontFamilies[fontFamily] %}
+        {% endif %}
+
+        {% if resolvedFontFamily %}
             .body,
             h1,
             h2,
@@ -341,18 +356,11 @@
             .promo-slider__info a[href],
             .ui-dialog
             {
-                font-family: {{ supportedFontFamilies[fontFamily]|raw }} !important;
+                font-family: {{ resolvedFontFamily|raw }} !important;
             }
         {% endif %}
     </style>
 
-    {% if externalStylesheets %}
-        {% for stylesheet in externalStylesheets %}
-            {% if stylesheet.url %}
-                <link rel="stylesheet" href="{{ stylesheet.url }}" />
-            {% endif %}
-        {% endfor %}
-    {% endif %}
 {% endblock %}
 
 {% block _dtc_styles_global_custom_css_widget %}

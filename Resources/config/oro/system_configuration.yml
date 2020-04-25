@@ -225,11 +225,21 @@ system_configuration:
                     'Courier New': courier
                     'Lucida Console': lucida-console
 
+        ystools_dtc.custom_font_family:
+            data_type: string
+            type: Symfony\Component\Form\Extension\Core\Type\TextType
+            search_type: text
+            priority: 10
+            options:
+                label:      'ystools.system_configuration.field.custom_font_family.label'
+                tooltip:    'ystools.system_configuration.field.custom_font_family.tooltip'
+                required:   false
+
         ystools_dtc.external_stylesheets:
             data_type: array
             type: Oro\Bundle\FormBundle\Form\Type\CollectionType
             search_type: text
-            priority: 10
+            priority: 20
             options:
                 label:      'ystools.system_configuration.field.external_stylesheets.label'
                 tooltip:    'ystools.system_configuration.field.external_stylesheets.tooltip'
@@ -360,8 +370,9 @@ system_configuration:
                                             - ystools_dtc.secondary_button_text_color
                                     dtc_ui_additional_styling_configuration:
                                         children:
-                                            - ystools_dtc.font_family
                                             - ystools_dtc.external_stylesheets
+                                            - ystools_dtc.font_family
+                                            - ystools_dtc.custom_font_family
                                     dtc_ui_custom_css_styling_configuration:
                                         children:
                                             - ystools_dtc.custom_css_global
@@ -409,8 +420,9 @@ system_configuration:
                                             - ystools_dtc.secondary_button_text_color
                                     dtc_ui_additional_styling_configuration:
                                         children:
-                                            - ystools_dtc.font_family
                                             - ystools_dtc.external_stylesheets
+                                            - ystools_dtc.font_family
+                                            - ystools_dtc.custom_font_family
                                     dtc_ui_custom_css_styling_configuration:
                                         children:
                                             - ystools_dtc.custom_css_global
