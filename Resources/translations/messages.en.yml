@@ -69,6 +69,9 @@ ystools:
                 label: 'Font Family'
                 tooltip: 'Font used to render text information'
                 placeholder: 'Select a font...'
+            custom_font_family:
+                label: 'Custom Font Family'
+                tooltip: 'Custom font used to render text information'
             external_stylesheets:
                 label: 'External Stylesheets'
                 tooltip: 'Links of external stylesheets, e.g. Google Fonts'
