@@ -13,3 +13,8 @@ services:
         arguments:
             - '@oro_entity.doctrine_helper'
             - '@validator'
+
+    ystools_dtc.form_type.stylesheet:
+        class: 'YsTools\Bundle\DefaultThemeConfigurationBundle\Form\Type\StylesheetType'
+        tags:
+            - { name: form.type, alias: ystools_stylesheet }
