@@ -345,6 +345,14 @@
             }
         {% endif %}
     </style>
+
+    {% if externalStylesheets %}
+        {% for stylesheet in externalStylesheets %}
+            {% if stylesheet.url %}
+                <link rel="stylesheet" href="{{ stylesheet.url }}" />
+            {% endif %}
+        {% endfor %}
+    {% endif %}
 {% endblock %}
 
 {% block _dtc_styles_global_custom_css_widget %}

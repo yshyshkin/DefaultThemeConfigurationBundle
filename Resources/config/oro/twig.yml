@@ -1,0 +1,2 @@
+bundles:
+    - YsToolsDefaultThemeConfigurationBundle:Form:fields.html.twig

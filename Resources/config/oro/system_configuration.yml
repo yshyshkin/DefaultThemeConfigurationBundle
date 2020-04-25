@@ -225,6 +225,18 @@ system_configuration:
                     'Courier New': courier
                     'Lucida Console': lucida-console
 
+        ystools_dtc.external_stylesheets:
+            data_type: array
+            type: Oro\Bundle\FormBundle\Form\Type\CollectionType
+            search_type: text
+            priority: 10
+            options:
+                label:      'ystools.system_configuration.field.external_stylesheets.label'
+                tooltip:    'ystools.system_configuration.field.external_stylesheets.tooltip'
+                required:   false
+                handle_primary: false
+                entry_type: YsTools\Bundle\DefaultThemeConfigurationBundle\Form\Type\StylesheetType
+
         ystools_dtc.custom_css_global:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\TextareaType
@@ -234,6 +246,8 @@ system_configuration:
                 label:      'ystools.system_configuration.field.custom_css_global.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_global.tooltip'
                 required:   false
+                attr:
+                    class: 'resizableBoth'
 
         ystools_dtc.custom_css_home:
             data_type: string
@@ -244,6 +258,8 @@ system_configuration:
                 label:      'ystools.system_configuration.field.custom_css_home.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_home.tooltip'
                 required:   false
+                attr:
+                    class: 'resizableBoth'
 
         ystools_dtc.custom_css_plp:
             data_type: string
@@ -254,6 +270,8 @@ system_configuration:
                 label:      'ystools.system_configuration.field.custom_css_plp.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_plp.tooltip'
                 required:   false
+                attr:
+                    class: 'resizableBoth'
 
         ystools_dtc.custom_css_pdp:
             data_type: string
@@ -264,6 +282,8 @@ system_configuration:
                 label:      'ystools.system_configuration.field.custom_css_pdp.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_pdp.tooltip'
                 required:   false
+                attr:
+                    class: 'resizableBoth'
 
         ystools_dtc.custom_css_qof:
             data_type: string
@@ -274,6 +294,8 @@ system_configuration:
                 label:      'ystools.system_configuration.field.custom_css_qof.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_qof.tooltip'
                 required:   false
+                attr:
+                    class: 'resizableBoth'
 
         ystools_dtc.custom_css_shopping_list:
             data_type: string
@@ -284,6 +306,8 @@ system_configuration:
                 label:      'ystools.system_configuration.field.custom_css_shopping_list.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_shopping_list.tooltip'
                 required:   false
+                attr:
+                    class: 'resizableBoth'
 
         ystools_dtc.custom_css_checkout:
             data_type: string
@@ -294,6 +318,8 @@ system_configuration:
                 label:      'ystools.system_configuration.field.custom_css_checkout.label'
                 tooltip:    'ystools.system_configuration.field.custom_css_checkout.tooltip'
                 required:   false
+                attr:
+                    class: 'resizableBoth'
 
     tree:
         system_configuration:
@@ -335,6 +361,7 @@ system_configuration:
                                     dtc_ui_additional_styling_configuration:
                                         children:
                                             - ystools_dtc.font_family
+                                            - ystools_dtc.external_stylesheets
                                     dtc_ui_custom_css_styling_configuration:
                                         children:
                                             - ystools_dtc.custom_css_global
@@ -383,6 +410,7 @@ system_configuration:
                                     dtc_ui_additional_styling_configuration:
                                         children:
                                             - ystools_dtc.font_family
+                                            - ystools_dtc.external_stylesheets
                                     dtc_ui_custom_css_styling_configuration:
                                         children:
                                             - ystools_dtc.custom_css_global

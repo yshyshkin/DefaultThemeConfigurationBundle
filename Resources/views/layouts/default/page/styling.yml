@@ -54,6 +54,7 @@ layout:
               options:
                   vars:
                       fontFamily:               '=data["system_config_provider"].getValue("ystools_dtc.font_family")'
+                      externalStylesheets:      '=data["system_config_provider"].getValue("ystools_dtc.external_stylesheets")'
         - '@add':
               id: dtc_styles_global_custom_css
               parentId: dtc_styles_global
