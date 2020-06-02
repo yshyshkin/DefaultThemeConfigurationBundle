@@ -29,6 +29,7 @@ composer require ys-tools/default-theme-configuration-bundle
 If the application is already installed, then cache has to be cleared manually and assets have to be rebuilt:
 
 ```
+rm -rf /var/cache/prod
 php bin/console cache:clear --env=prod
 php bin/console oro:assets:install --env=prod
 ```
