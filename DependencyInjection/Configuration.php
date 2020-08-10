@@ -21,6 +21,7 @@ class Configuration implements ConfigurationInterface
             [
                 'company_name'                  => ['type' => 'string', 'value' => null],
                 'company_logo'                  => ['value' => null],
+                'favicon'                       => ['value' => null],
                 'header_footer_bg_color'        => ['type' => 'string', 'value' => null],
                 'header_footer_text_color'      => ['type' => 'string', 'value' => null],
                 'main_menu_bg_color'            => ['type' => 'string', 'value' => null],

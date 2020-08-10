@@ -40,6 +40,17 @@ system_configuration:
                 tooltip:    'ystools.system_configuration.field.company_name.tooltip'
                 required:   false
 
+        ystools_dtc.favicon:
+            data_type: string
+            type: 'Oro\Bundle\ConfigBundle\Form\Type\ConfigFileType'
+            priority: 0
+            options:
+                label:      'ystools.system_configuration.field.favicon.label'
+                tooltip:    'ystools.system_configuration.field.favicon.tooltip'
+                required:   false
+                fileConstraints:
+                    - Image: ~
+
         ystools_dtc.header_footer_bg_color:
             data_type: string
             type: Symfony\Component\Form\Extension\Core\Type\ColorType
@@ -344,6 +355,7 @@ system_configuration:
                                         children:
                                             - ystools_dtc.company_logo
                                             - ystools_dtc.company_name
+                                            - ystools_dtc.favicon
                                     dtc_ui_main_element_color_configuration:
                                         children:
                                             - ystools_dtc.header_footer_bg_color
@@ -394,6 +406,7 @@ system_configuration:
                                         children:
                                             - ystools_dtc.company_logo
                                             - ystools_dtc.company_name
+                                            - ystools_dtc.favicon
                                     dtc_ui_main_element_color_configuration:
                                         children:
                                             - ystools_dtc.header_footer_bg_color

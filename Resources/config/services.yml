@@ -18,3 +18,12 @@ services:
         class: 'YsTools\Bundle\DefaultThemeConfigurationBundle\Form\Type\StylesheetType'
         tags:
             - { name: form.type, alias: ystools_stylesheet }
+
+    ystools_dtc.data_provider.default_theme_configuration:
+        class: 'YsTools\Bundle\DefaultThemeConfigurationBundle\Layout\DataProvider\DefaultThemeConfigurationProvider'
+        arguments:
+            - '@oro_config.manager'
+            - '@oro_entity.doctrine_helper'
+            - '@oro_attachment.manager'
+        tags:
+            - { name: layout.data_provider, alias: dtc }
