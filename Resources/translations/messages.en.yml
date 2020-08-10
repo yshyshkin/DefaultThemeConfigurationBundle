@@ -19,7 +19,7 @@ ystools:
                 tooltip: 'The company logo rendered at the header'
             favicon:
                 label: 'Favicon'
-                tooltip: 'The favicon of a current website'
+                tooltip: 'The favicon of the current application'
             header_footer_bg_color:
                 label: 'Header and Footer Background Color'
                 tooltip: 'The color of the background of header and footer blocks'

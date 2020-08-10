@@ -58,6 +58,8 @@ while Enterprise Edition supports both global and website level configuration.
 
 **Company Name** sets alternative text for the company logo
 
+**Favicon** sets application favicon. The image is automatically resized to 64x64 size
+
 ![Logo Configuration Example](Resources/doc/img/logo-configuration-example.png)
 
 
