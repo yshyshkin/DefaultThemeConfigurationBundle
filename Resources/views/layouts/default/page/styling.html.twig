@@ -311,7 +311,7 @@
     {% if externalStylesheets %}
         {% for stylesheet in externalStylesheets %}
             {% if stylesheet.url %}
-                <link rel="stylesheet" href="{{ stylesheet.url }}" />
+                <link rel="stylesheet" href="{{ stylesheet.url|striptags }}" />
             {% endif %}
         {% endfor %}
     {% endif %}
@@ -356,7 +356,7 @@
             .promo-slider__info a[href],
             .ui-dialog
             {
-                font-family: {{ resolvedFontFamily|raw }} !important;
+                font-family: {{ resolvedFontFamily|striptags|raw }} !important;
             }
         {% endif %}
     </style>
