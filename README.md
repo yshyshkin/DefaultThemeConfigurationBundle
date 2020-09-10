@@ -1,5 +1,7 @@
 # OroCommerce Default Theme Configuration Bundle
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/yshyshkin)
+
 The bundle allows configuring the default OroCommerce theme from the user interface without writing any code. 
 It allows setting multiple theme options (logo, colors, font, styling) and customize visual representation of the storefront.
 
@@ -153,6 +155,8 @@ may override it
 ## How To Thank The Author
 
 If this bundle helped you and you are feeling generous today, then you can thank the author
-and support this initiative using the following button.
+and support this initiative using one of the following buttons.
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/yshyshkin)
 
 [![Paypal Donation](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=J9945JLRB47N2&source=url)
