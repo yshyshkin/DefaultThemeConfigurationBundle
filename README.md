@@ -15,7 +15,7 @@ The bundle is compatible both with the Community Edition and Enterprise Edition 
     * [Button Colors](#button-colors)
     * [Additional Styling](#additional-styling)
     * [CSS Styling](#css-styling)
-* [How To Thank The Author](#how-to-thank-the-author) [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/yshyshkin)
+* [How To Thank The Author](#how-to-thank-the-author)
 
 
 ## How To Install The Bundle
@@ -153,6 +153,7 @@ may override it
 ## How To Thank The Author
 
 If this bundle helped you and you are feeling generous today, then you can thank the author
-and support this initiative using the following button.
+and support this initiative using one of the following buttons.
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/yshyshkin)
+[![Support](https://raster.shields.io/badge/Support-Patreon-red.png)](https://patreon.com/yshyshkin)
+[![Support](https://raster.shields.io/badge/Support-PayPal-blue.png)](https://paypal.me/yshyshkin)
