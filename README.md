@@ -29,7 +29,7 @@ composer require ys-tools/default-theme-configuration-bundle
 If the application is already installed, then cache has to be cleared manually and assets have to be rebuilt:
 
 ```
-rm -rf /var/cache/prod
+rm -rf var/cache/prod
 php bin/console cache:clear --env=prod
 php bin/console oro:assets:install --env=prod
 ```
@@ -155,5 +155,4 @@ may override it
 If this bundle helped you and you are feeling generous today, then you can thank the author
 and support this initiative using one of the following buttons.
 
-[![Support](https://raster.shields.io/badge/Support-Patreon-red.png)](https://patreon.com/yshyshkin)
 [![Support](https://raster.shields.io/badge/Support-PayPal-blue.png)](https://paypal.me/yshyshkin)

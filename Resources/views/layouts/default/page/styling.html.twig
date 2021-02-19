@@ -123,7 +123,8 @@
             .register-form,
             .forgot-password-form,
             .reset-password-form,
-            .check-email
+            .check-email,
+            .order-checkout-widget__container-wrapper
             {
                 background-color: {{ formBgColor }} !important;
             }
@@ -354,7 +355,11 @@
             .select,
             .btn,
             .promo-slider__info a[href],
-            .ui-dialog
+            .ui-dialog,
+            .product-item__primary-content,
+            .product-item__secondary-content,
+            .popover-body .table,
+            .grid-container .grid
             {
                 font-family: {{ resolvedFontFamily|striptags|raw }} !important;
             }

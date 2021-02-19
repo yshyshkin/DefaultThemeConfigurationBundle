@@ -1,0 +1,7 @@
+{% block _dtc_styles_shopping_list_custom_css_widget %}
+    {% if customCssShoppingList %}
+        <style type="text/css">
+            {{ customCssShoppingList|striptags|raw }}
+        </style>
+    {% endif %}
+{% endblock %}
