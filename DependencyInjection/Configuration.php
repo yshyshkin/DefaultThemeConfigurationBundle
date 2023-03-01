@@ -48,6 +48,7 @@ class Configuration implements ConfigurationInterface
                 'custom_css_qof'                => ['type' => 'string', 'value' => null],
                 'custom_css_shopping_list'      => ['type' => 'string', 'value' => null],
                 'custom_css_checkout'           => ['type' => 'string', 'value' => null],
+                'email_template_wrapper'        => ['type' => 'string', 'value' => '_CONTENT_'],
             ]
         );
 

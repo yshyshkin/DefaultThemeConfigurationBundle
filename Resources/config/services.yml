@@ -27,3 +27,10 @@ services:
             - '@oro_attachment.manager'
         tags:
             - { name: layout.data_provider, alias: dtc }
+
+    ystools_dtc.email.email_rendered_decorator:
+        class: 'YsTools\Bundle\DefaultThemeConfigurationBundle\Email\EmailRendererDecorator'
+        decorates: oro_email.email_renderer
+        arguments:
+            - '@.inner'
+            - '@oro_config.manager'

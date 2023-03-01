@@ -17,6 +17,8 @@ system_configuration:
             title: 'ystools.system_configuration.group.ui_additional_styling_configuration.label'
         dtc_ui_custom_css_styling_configuration:
             title: 'ystools.system_configuration.group.custom_css_styling_configuration.label'
+        dtc_ui_email_template_configuration:
+            title: 'ystools.system_configuration.group.dtc_ui_email_template_configuration.label'
 
     fields:
         ystools_dtc.company_logo:
@@ -342,6 +344,17 @@ system_configuration:
                 attr:
                     class: 'resizableBoth'
 
+        ystools_dtc.email_template_wrapper:
+            data_type: string
+            type: Oro\Bundle\FormBundle\Form\Type\OroRichTextType
+            search_type: text
+            options:
+                label: 'ystools.system_configuration.field.email_template_wrapper.label'
+                tooltip: 'ystools.system_configuration.field.email_template_wrapper.tooltip'
+                required: false
+                wysiwyg_options:
+                    toolbar: 'undo redo | bold italic underline | bullist numlist | link image | fullscreen code'
+
     tree:
         system_configuration:
             commerce:
@@ -394,6 +407,9 @@ system_configuration:
                                             - ystools_dtc.custom_css_qof
                                             - ystools_dtc.custom_css_shopping_list
                                             - ystools_dtc.custom_css_checkout
+                                    dtc_ui_email_template_configuration:
+                                        children:
+                                            - ystools_dtc.email_template_wrapper
         website_configuration:
             commerce:
                 children:

@@ -9,6 +9,7 @@ ystools:
             ui_button_color_configuration.label: 'Button Colors'
             ui_additional_styling_configuration.label: 'Additional Styling'
             custom_css_styling_configuration.label: 'CSS Styling'
+            dtc_ui_email_template_configuration.label: 'Email Template'
 
         field:
             company_name:
@@ -99,3 +100,6 @@ ystools:
             custom_css_checkout:
                 label: 'Checkout Styling'
                 tooltip: 'CSS styles applicable to checkout page only'
+            email_template_wrapper:
+                label: 'Email Template Wrapper'
+                tooltip: 'Wraps content of email templates into additional HTML header and footer. Use _CONTENT_ placeholder to show original email template content'
