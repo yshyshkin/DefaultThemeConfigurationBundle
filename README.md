@@ -150,6 +150,17 @@ may override it
 ![CSS Styling Example](Resources/doc/img/css-styling-example.png)
 
 
+### Email Templates
+
+![CSS Styling](Resources/doc/img/email-template.png)
+
+**Enable Email Template Wrapper** enables custom email template wrapper for all standard emails
+
+**Email Template Wrapper** contains HTML content of the email wrapper
+
+![CSS Styling Example](Resources/doc/img/email-template-example.png)
+
+
 ## How To Thank The Author
 
 If this bundle helped you and you are feeling generous today, then you can thank the author

@@ -33,4 +33,4 @@ services:
         decorates: oro_email.email_renderer
         arguments:
             - '@.inner'
-            - '@oro_config.manager'
+            - '@oro_config.global'

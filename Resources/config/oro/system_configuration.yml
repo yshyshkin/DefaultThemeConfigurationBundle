@@ -344,16 +344,23 @@ system_configuration:
                 attr:
                     class: 'resizableBoth'
 
+        ystools_dtc.email_template_wrapper_enabled:
+            data_type: boolean
+            type: Oro\Bundle\ConfigBundle\Form\Type\ConfigCheckbox
+            priority: 100
+            options:
+                label: 'ystools.system_configuration.field.email_template_wrapper_enabled.label'
+                tooltip: 'ystools.system_configuration.field.email_template_wrapper_enabled.tooltip'
+
         ystools_dtc.email_template_wrapper:
             data_type: string
-            type: Oro\Bundle\FormBundle\Form\Type\OroRichTextType
+            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
             search_type: text
+            priority: 80
             options:
                 label: 'ystools.system_configuration.field.email_template_wrapper.label'
                 tooltip: 'ystools.system_configuration.field.email_template_wrapper.tooltip'
                 required: false
-                wysiwyg_options:
-                    toolbar: 'undo redo | bold italic underline | bullist numlist | link image | fullscreen code'
 
     tree:
         system_configuration:
@@ -409,6 +416,7 @@ system_configuration:
                                             - ystools_dtc.custom_css_checkout
                                     dtc_ui_email_template_configuration:
                                         children:
+                                            - ystools_dtc.email_template_wrapper_enabled
                                             - ystools_dtc.email_template_wrapper
         website_configuration:
             commerce:

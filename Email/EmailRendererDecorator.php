@@ -15,11 +15,15 @@ class EmailRendererDecorator extends EmailRenderer
 
     public function compileMessage(EmailTemplateInterface $template, array $templateParams = []): array
     {
-        list($subject, $content) =  $this->originalRenderer->compileMessage($template, $templateParams);
+        list($subject, $content) = $this->originalRenderer->compileMessage($template, $templateParams);
 
-        $wrapper = $this->configManager->get('ystools_dtc.email_template_wrapper');
-        if ($wrapper) {
-            $content = str_replace('_CONTENT_', $content, $wrapper);
+        if ($this->configManager->get('ystools_dtc.email_template_wrapper_enabled')) {
+            $search = ['{{ system.appURL }}', '{{ subject }}', '{{ content }}'];
+            $replace = [$this->configManager->get('oro_ui.application_url'), $subject, $content];
+
+            $wrapper = $this->configManager->get('ystools_dtc.email_template_wrapper');
+            $wrapper = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $wrapper);
+            $content = str_replace($search, $replace, $wrapper);
         }
 
         return [$subject, $content];
