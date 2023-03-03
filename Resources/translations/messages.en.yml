@@ -100,6 +100,9 @@ ystools:
             custom_css_checkout:
                 label: 'Checkout Styling'
                 tooltip: 'CSS styles applicable to checkout page only'
+            email_template_wrapper_enabled:
+                label: 'Enable Email Template Wrapper'
+                tooltip: 'Wraps content of email templates into additional HTML header and footer'
             email_template_wrapper:
                 label: 'Email Template Wrapper'
-                tooltip: 'Wraps content of email templates into additional HTML header and footer. Use _CONTENT_ placeholder to show original email template content'
+                tooltip: 'HTML header and footer that wraps original email template content. Use {{ subject }} and {{ content }} placeholders to add original email template data. Use {{ system.appURL }} placeholder to add application URL'
