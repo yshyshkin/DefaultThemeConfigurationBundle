@@ -24,6 +24,7 @@ class EmailRendererDecorator extends EmailRenderer
             $wrapper = $this->configManager->get('ystools_dtc.email_template_wrapper');
             $wrapper = preg_replace('#<script(.*?)>(.*?)</script>#is', '', $wrapper);
             $content = str_replace($search, $replace, $wrapper);
+            $content = sprintf('<html><body style="margin:0;">%s</body></html>', $content);
         }
 
         return [$subject, $content];

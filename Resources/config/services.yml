@@ -34,3 +34,8 @@ services:
         arguments:
             - '@.inner'
             - '@oro_config.global'
+            -
+    ystools_dtc.form.extension.email_template_rich_text:
+        class: 'YsTools\Bundle\DefaultThemeConfigurationBundle\Form\Extension\EmailTemplateRichTextTypeExtension'
+        tags:
+            - { name: form.type_extension, extended_type: Oro\Bundle\EmailBundle\Form\Type\EmailTemplateRichTextType }
