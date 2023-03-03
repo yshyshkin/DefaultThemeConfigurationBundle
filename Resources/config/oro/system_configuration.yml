@@ -354,13 +354,15 @@ system_configuration:
 
         ystools_dtc.email_template_wrapper:
             data_type: string
-            type: Symfony\Component\Form\Extension\Core\Type\TextareaType
+            type: Oro\Bundle\FormBundle\Form\Type\OroRichTextType
             search_type: text
             priority: 80
             options:
                 label: 'ystools.system_configuration.field.email_template_wrapper.label'
                 tooltip: 'ystools.system_configuration.field.email_template_wrapper.tooltip'
                 required: false
+                wysiwyg_options:
+                    toolbar: 'undo redo | bold italic underline | bullist numlist | link image | fullscreen code'
 
     tree:
         system_configuration:

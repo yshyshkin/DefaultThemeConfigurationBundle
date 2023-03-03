@@ -156,7 +156,7 @@ may override it
 
 **Enable Email Template Wrapper** enables custom email template wrapper for all standard emails
 
-**Email Template Wrapper** contains HTML content of the email wrapper
+**Email Template Wrapper** contains HTML content of the email wrapper. Please do not forget to verify that all links are static
 
 ![CSS Styling Example](Resources/doc/img/email-template-example.png)
 
