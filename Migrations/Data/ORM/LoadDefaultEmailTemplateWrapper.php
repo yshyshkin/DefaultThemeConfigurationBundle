@@ -14,8 +14,8 @@ class LoadDefaultEmailTemplateWrapper extends AbstractFixture implements Contain
 
     // @codingStandardsIgnoreStart
     public const DEFAULT_WRAPPER = '
-        <div style="background-color: #ebebeb; font-family: Roboto, Helvetica, Arial, Lucida, sans-serif; height: 100%;">
-            <div style="background-color: #ebebeb; height   : 20px;"></div>
+        <div style="background-color: #ebebeb; font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;">
+            <div style="background-color: #ebebeb; height: 20px;"></div>
             <table style="width: 600px; margin: auto; border-collapse: collapse;">
                 <tr>
                     <td colspan="2" style="background-color: #ffffff; border: 0; padding: 0;">
@@ -46,6 +46,7 @@ class LoadDefaultEmailTemplateWrapper extends AbstractFixture implements Contain
                     </td>
                 </tr>
             </table>
+            <div style="background-color: #ebebeb; height: 20px;"></div>
         </div>';
     // @codingStandardsIgnoreEnd
 
