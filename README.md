@@ -15,6 +15,7 @@ The bundle is compatible both with the Community Edition and Enterprise Edition 
     * [Button Colors](#button-colors)
     * [Additional Styling](#additional-styling)
     * [CSS Styling](#css-styling)
+    * [Email Templates](#email-templates)
 * [How To Thank The Author](#how-to-thank-the-author)
 
 
