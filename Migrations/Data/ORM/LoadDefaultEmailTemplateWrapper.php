@@ -15,11 +15,11 @@ class LoadDefaultEmailTemplateWrapper extends AbstractFixture implements Contain
     // @codingStandardsIgnoreStart
     public const DEFAULT_WRAPPER = '
         <div style="background-color: #ebebeb; font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;">
-            <div style="background-color: #ebebeb; height: 20px;"></div>
+            <div style="background-color: #ebebeb; height: 20px;">&nbsp;</div>
             <table style="width: 600px; margin: auto; border-collapse: collapse;">
                 <tr>
                     <td colspan="2" style="background-color: #ffffff; border: 0; padding: 0;">
-                        <img style="border:0; outline:none; text-decoration:none; display:block; margin: auto; padding: 20px;" src="/bundles/orofrontend/default/images/logo/demob2b-logo.svg" alt="Logo" width="167" height="32">
+                        <img style="border:0; outline:none; text-decoration:none; display:block; margin: auto; padding: 20px;" src="/bundles/orofrontend/default/images/logo.png" alt="OroCommerce" width="258" height="35">
                         <div style="width: 580px; height: 2px; margin: auto; background-color: #e0e0e0"></div>
                     </td>
                 </tr>
@@ -33,10 +33,10 @@ class LoadDefaultEmailTemplateWrapper extends AbstractFixture implements Contain
                     </td>
                     <td style="background-color: #e0e0e0; border: 0; padding: 10px 30px 0 0; text-align: right;">
                         <ul style="list-style: none;">
-                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.facebook.com/" title="Facebook"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/facebook.svg" alt="Facebook" width="32" height="32"></a></li>
-                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.instagram.com/" title="Instagram"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/instagram.svg" alt="Instagram" width="32" height="32"></a></li>
-                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.twitter.com/" title="Twitter"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/twitter.svg" alt="Twitter" width="32" height="32"></a></li>
-                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.linkedin.com/" title="LinkedIn"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/linkedin.svg" alt="LinkedIn" width="32" height="32"></a></li>
+                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.facebook.com/" title="Facebook"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/facebook.png" alt="Facebook" width="32" height="32"></a></li>
+                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.instagram.com/" title="Instagram"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/instagram.png" alt="Instagram" width="32" height="32"></a></li>
+                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.twitter.com/" title="Twitter"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/twitter.png" alt="Twitter" width="32" height="32"></a></li>
+                            <li style="display: inline-block; width: 32px; height: 32px; border-radius: 25%; background-color: #ffffff;"><a href="https://www.linkedin.com/" title="LinkedIn"><img src="/bundles/ystoolsdefaultthemeconfiguration/images/social/linkedin.png" alt="LinkedIn" width="32" height="32"></a></li>
                         </ul>
                     </td>
                 </tr>
@@ -46,7 +46,7 @@ class LoadDefaultEmailTemplateWrapper extends AbstractFixture implements Contain
                     </td>
                 </tr>
             </table>
-            <div style="background-color: #ebebeb; height: 20px;"></div>
+            <div style="background-color: #ebebeb; height: 20px;">&nbsp;</div>
         </div>';
     // @codingStandardsIgnoreEnd
 
